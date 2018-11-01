@@ -28,7 +28,7 @@ message.addEventListener("keypress", function() {
   socket.emit("typingMessage", handle.value); // typing message we emit and this will be broadcast to all but original user sending this typing message
 });
 
-// Listen for events
+// Listen for events from server
 socket.on("chatMessage", data => {
   feedback.innerHTML = "";
   output.innerHTML +=
